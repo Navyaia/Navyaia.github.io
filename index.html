@@ -4,19 +4,101 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Name</title>
+    
     <link rel="icon" type="image/x-icon" href="assets/images/ball.png" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+        body{
+            background-color: rgb(130, 122, 122);
+        }
+         .container {
+      position: fixed;
+      overflow: auto;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      scroll-behavior: smooth;
+      height: 100%;
+    }
+
+    .header-row {
+      background-color: rgb(59, 58, 61);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0px;
+    }
+
+    .header-row .box {
+      padding: 10px;
+    }
+
+    .header-row li {
+      display: inline;
+      padding: 5px;
+      font-size: larger;
+    }
+
+    .header-row a {
+      text-decoration: none;
+      color: azure;
+      font-size: 20px;
+    }
+
+    .header-row a:hover {
+    
+      color: blue;
+    }
+
+    .row {
+      padding: 100px;
+      height: 75%;
+    }
+
+    .row .box {
+      padding: 20px;
+      margin: 10px;
+    }
+    .box h1{
+        color: azure;
+        font-size: 35px;
+    }
+    .box{
+        font-size:20px ;
+        color: azure;
+    }
+
+    .footer {
+      padding: 20px;
+      margin: 0px;
+      background-color: black;
+      color: white;
+      font-size: large;
+    }
+
+    button {
+      background-color: teal;
+      padding: 10px;
+      color: white;
+      border: none;
+      border-radius: 10%;
+    }
+    </style>
   </head>
+
   <body>
     <div class="container">
-      <div class="header-row"> 
-        <div class="box"><h1>Navya Nallapaneni</h1></div>
+      <div class="header-row" > 
+        <div class="box"><h1>Navya N</h1></div>
         <div class="box">
-          <ul type="none">
+          <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About</a></li>
+
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -25,18 +107,14 @@
       <div class="row" id="home">
         <div style="display: flex;padding-top: 50px;">
           <div class="box">
-            <h1>Full Stack Developer</h1>
+            <h1>Fornt-End Developer</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              neque est nihil ipsum error. Deserunt voluptas explicabo ea eum
-              quasi. Rem nisi molestias quia nesciunt incidunt numquam fugiat
-              perferendis assumenda?
+                A front-end developer creates the visual and interactive components of websites and web applications using technologies like HTML, CSS, and JavaScript. They ensure responsive designs that work seamlessly across devices while maintaining cross-browser compatibility. Collaborating with UX/UI designers, they implement user-friendly interfaces and optimize the overall user experience.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              neque est nihil ipsum error. Deserunt voluptas explicabo ea eum
-              quasi. Rem nisi molestias quia nesciunt incidunt numquam fugiat
-              perferendis assumenda?
+                Skilled in frameworks like React or Angular, they add interactivity and dynamic features to web pages. Front-end developers also integrate APIs to fetch real-time data and ensure accessibility for users with diverse needs. By balancing creativity and technical precision, they deliver engaging and functional digital experiences that meet both user and business goals.
+
+
             </p>
             <button>Button 1</button>
             <button>Button 1</button>
@@ -47,31 +125,29 @@
         </div>
       </div>
 
-      <div id="projects" class="row" style="background-color: lightcoral">
-        <h1>Projects</h1>
-        <div style="display: flex">
+      <div id="projects" class="row" style="background-color: rgb(198, 204, 24)">
+        <h1 style="text-align: center;color: aliceblue">Projects</h1>
+        <div style="display: flex ">
           <div class="box">
-            <h3>Project 1</h3>
+            <h3 >Tech-Shop</h3>
+            
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
+                We built a Tech-Shop project using only HTML and CSS, focusing on creating a visually appealing and responsive design. The project includes a clean layout for product displays, navigation, and contact sections. 
+                
             </p>
           </div>
 
           <div class="box">
-            <h3>Project 2</h3>
+            <h3>E-commerce</h3>
+            
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
+                Developed a responsive e-commerce website using HTML, CSS, and JavaScript, featuring dynamic product listings, an interactive shopping cart, and user-friendly navigation to enhance customer experience.
             </p>
           </div>
 
           <div class="box">
-            <h3>Project 3</h3>
+            <h3>Project </h3>
+            
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
               quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
@@ -81,8 +157,8 @@
           </div>
         </div>
       </div>
-      <div id="services" class="row" style="background-color: lightblue">
-        <h1>Services</h1>
+      <div id="services" class="row" style="background-color: rgb(69, 129, 149)">
+        <h1 style="text-align: center; color: aliceblue;">Services</h1>
         <div style="display: flex">
           <div class="box">
             <h3>Web App Development</h3>
@@ -105,7 +181,7 @@
           </div>
 
           <div class="box">
-            <h3>Backend Development</h3>
+            <h3>Frontend Development</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
               quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
@@ -115,24 +191,27 @@
           </div>
         </div>
       </div>
-      <div id="about" class="row">
-        <h1>About</h1>
+      <div id="about" class="row" style="background-color: rgb(208, 53, 135); color: aliceblue;">
+        <h1 style="font-size: 35px;">About</h1>
         <h3>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint
-          optio labore a obcaecati. Ullam distinctio corrupti autem. Veritatis
-          ipsa veniam deserunt asperiores nesciunt at provident itaque
-          cupiditate vel dolor.
+            My skills in HTML enable me to design structured web pages, CSS allows me to bring those pages to life with styling, and JavaScript empowers me to create dynamic, interactive content.
         </h3>
-        <h2>Skills</h2>
-        <h3>Java, Python, Reactjs</h3>
-        <p>Display the logo of all the technologies you know.</p>
+        <h2 style="font-size: 35px;">Skills</h2>
+        <h3>Html , CSS, JavaScript</h3>
+        <ul type="none">
+            <!-- <li><img src="https://www.pngfind.com/pngs/m/683-6834215_html-css-js-icon-hd-png-download.png" alt=""></li> -->
+        <ul><li><img src="" alt=""></li>
+        <ul><li><img src="" alt=""></li>
+        <ul><li><img src="" alt=""></li>
+        </ul>
+        
       </div>
       <div
         id="contact"
         class="row"
-        style="background-color: lightgoldenrodyellow"
+        style="background-color: rgb(32, 231, 115)"
       >
-        <h1>Contact</h1>
+        <h1 style="text-align: center; color: aliceblue;">Contact</h1>
         <div style="display: flex">
          
 
@@ -159,10 +238,10 @@
               Perspiciatis, ab.
             </p>
             <p>
-              <b>Email Address: </b>sample@email.com
+              <b>Email Address: </b>navyanallapaneni9@email.com
             </p>
             <p>
-              <b>Phone Number: </b>+91 343 445 6789
+              <b>Phone Number: </b>+91 9392876858
             </p>
           </div>
         </div>
